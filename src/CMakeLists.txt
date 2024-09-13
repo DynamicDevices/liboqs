@@ -145,9 +145,9 @@ write_basic_package_version_file(
   COMPATIBILITY AnyNewerVersion
 )
 
-if(OQS_USE_OPENSSL)
-    set(_oqs_pkgconfig_requires_private openssl)
-endif()
+#if(OQS_USE_OPENSSL)
+#    set(_oqs_pkgconfig_requires_private openssl)
+#endif()
 
 # generate pkg-config file
 configure_file(
