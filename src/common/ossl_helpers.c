@@ -351,7 +351,7 @@ static void ensure_symbol(const char *name, void **symp) {
 
 static void ensure_library(void) {
 	if (!libcrypto_dlhandle) {
-		libcrypto_dlhandle = dlopen(OQS_OPENSSL_CRYPTO_SONAME,
+		libcrypto_dlhandle = dlopen(OPENSSL_CRYPTO_LIBRARY,
 		                            RTLD_LAZY | RTLD_LOCAL);
 		if (!libcrypto_dlhandle) {
 			exit(EXIT_FAILURE);
