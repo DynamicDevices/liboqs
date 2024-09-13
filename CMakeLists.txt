@@ -171,7 +171,7 @@ if(${OQS_USE_OPENSSL})
 #	COMMAND_ERROR_IS_FATAL ANY)
 #      message(STATUS "OpenSSL dlopen SONAME: " ${OQS_OPENSSL_CRYPTO_SONAME})
 #    endif()
-#endif()
+endif()
 
 set(PUBLIC_HEADERS ${PROJECT_SOURCE_DIR}/src/oqs.h
                    ${PROJECT_SOURCE_DIR}/src/common/aes/aes_ops.h
