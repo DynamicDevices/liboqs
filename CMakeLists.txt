@@ -154,10 +154,10 @@ if(${OQS_USE_OPENSSL})
         endif()
     endif()
 
-    find_openssl(OpenSSL 1.1.1 REQUIRED)
+    find_package(OpenSSL 1.1.1 REQUIRED)
+#    FindOpenSSL(OpenSSL 1.1.1 REQUIRED)
 
 #    find_package(OpenSSL 1.1.1 REQUIRED)
-
 #    if(OQS_DLOPEN_OPENSSL)
 #      find_program(OBJDUMP objdump)
 #      if(NOT OBJDUMP)
